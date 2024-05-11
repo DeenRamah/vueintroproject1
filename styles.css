@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #8cb0be;
+}
+
+#app {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 300px;
+    height: 500px;
+    perspective: 900px;
+
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+    z-index: 300;
+    box-shadow: 0px 20px 100px #555;
+}
+
+.love {
+    position: relative; /* Change to relative */
+    top: 50%; /* Adjust top position within the navbar */
+    left: 50%;
+    transform: translate(-10%, -50%); /* Center the love text */
+    font-size: 18px;
+    color: #000000;
+    z-index: 1;
+}
+
+.product-display {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    transition: .5s all ease;
+    perspective: 900px;
+    box-shadow: 0px 20px 50px #555;
+
+}
+
+.product-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+
+.product-container:hover .product-image {
+    transform: rotateX(15deg);
+}
+
+.product-info {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: bottom 0.5s ease;
+}
+.product-info ul li{
+    text-decoration: none;
+}
+
+.product-container:hover .product-info {
+    bottom: 10px;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+}
